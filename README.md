@@ -12,18 +12,29 @@ A robust biometric system for 1:N offline handwritten signature identification. 
 
 ### 1. Score Distribution (Genuine vs. Impostor)
 The system effectively separates genuine signatures from forgeries using a strict combined score threshold.
-*(Upload your `score_distribution.png` to the repo and replace this text with the image link)*
+
+![Score Distribution](score_distribution.png)
 
 ### 2. Confusion Matrix
 Demonstrates the 1:N identification accuracy across multiple users.
-*(Upload your `confusion_matrix.jpg` to the repo and replace this text with the image link)*
+
+![Confusion Matrix](confusion_matrix.png)
 
 ### 3. Structural Difference Mapping
 Visualizes the exact areas of geometric mismatch between an enrolled profile and a tested signature.
-*(Upload your `example_WORST_MISMATCH.jpg` to the repo and replace this text with the image link)*
+
+![SSIM Heatmap](ssim_heatmap.png)
 
 ## 🛠️ Installation & Usage
 
 1. Clone the repository:
    ```bash
    git clone [https://github.com/presko27/Signature-Verification.git](https://github.com/presko27/Signature-Verification.git)
+2. Install the required dependencies:
+   ```bash
+   pip install -r REQUIREMENTS.txt
+3. Run the main system:
+   ```bash
+   python main.py
+
+   
